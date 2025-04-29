@@ -1,4 +1,5 @@
 import { ClickableArea } from "./scripts/clickable-area";
+import "./styles/game.css";
 
 export class Game {
   // Game Properties
