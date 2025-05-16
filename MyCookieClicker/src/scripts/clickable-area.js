@@ -2,6 +2,7 @@ import CookieIMG from "../assets/cookie.png";
 export class ClickableArea {
   gameElement = null;
   onClick = null;
+  
 
   constructor(gameElement, onClick) {
     this.gameElement = gameElement;

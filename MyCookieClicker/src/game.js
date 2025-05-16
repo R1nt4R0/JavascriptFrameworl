@@ -1,6 +1,5 @@
 import { ClickableArea } from "./scripts/clickable-area";
 import "./styles/game.css";
-
 export class Game {
   // Game Properties
   cookies = 0;
@@ -56,8 +55,7 @@ export class Game {
   // Sans fonction fléchée, le this serait celui de l'élément lié au click.
   onClickableAreaClick = () => {
     // On ajoute 1 point aux cookies pour chaque click.
-    this.cookies += 1;
-    // Par soucis de performance car les changements au DOM sont très lourd,
+    this.cookies += 1;    // Par soucis de performance car les changements au DOM sont très lourd,
     // On demande à la Window d'attendre la prochaine frame d'animation
     // pour réaliser les changements.
     window.requestAnimationFrame(() => {
