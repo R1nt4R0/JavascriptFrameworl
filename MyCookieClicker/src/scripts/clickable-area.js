@@ -1,15 +1,15 @@
 import CookieIMG from "../assets/cookie.png";
+
 export class ClickableArea {
   gameElement = null;
   onClick = null;
-  
 
   constructor(gameElement, onClick) {
     this.gameElement = gameElement;
     this.onClick = onClick;
   }
 
-render() {
+  render() {
     // On crée un nouvel élément du DOM.
     this.clickableAreaElement = document.createElement("section");
     this.clickableAreaElement.id = "game-clickable-area";
